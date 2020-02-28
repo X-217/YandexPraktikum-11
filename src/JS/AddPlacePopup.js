@@ -1,6 +1,7 @@
 'use strict';
 
-class AddPlacePopup extends Popup {
+import Popup from "./Popup.js";
+export default  class AddPlacePopup extends Popup {
     constructor(cardList, formValidator) {
         super();
         this.text = {
