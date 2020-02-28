@@ -12,7 +12,7 @@ import ImageViewPopup from "./JS/ImageViewerPopup.js";
 
 const cardContainer = document.querySelector(".places-list");
 const userParams = {
-    baseUrl: "http://95.216.175.5/cohort7",
+    baseUrl: "https://praktikum.tk/cohort7",
     token: "e68c9d86-cb48-42e5-bf67-da81383a3bce",
 };
 const api = new API(userParams);
