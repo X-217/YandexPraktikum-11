@@ -12,7 +12,7 @@
 <div class="root">
 
     <header class="header root__section">
-        <img alt="mesto logo" class="logo" src="<%=require('./images/logo.svg')%>">
+        <img alt="mesto logo" class="logo" src="<%=require('./images/logo.svg').default%>">
     </header>
 
     <div class="profile root__section">
@@ -31,7 +31,7 @@
 
     <div class="popup">
         <div class="popup__content">
-            <img alt="Close" class="popup__close popup__close_form" src="<%=require('./images/close.svg')%>">
+            <img alt="Close" class="popup__close popup__close_form" src="<%=require('./images/close.svg').default%>">
             <h3 class="popup__title"></h3>
             <form class="popup__form" novalidate>
                 <input class="popup__input popup__input_firstInput" type="text" required minlength="2" maxlength="30">
@@ -46,22 +46,12 @@
     <div class="popup popup__image-viewer">
         <div class="popup__image-container">
             <img alt="изображение с карточки" class="popup__image" src="">
-            <img alt="Close" class="popup__close popup__close_img" src="<%=require('./images/close.svg')%>">
+            <img alt="Close" class="popup__close popup__close_img" src="<%=require('./images/close.svg').default%>">
         </div>
     </div>
 </div>
 
 <script src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
-<script src="JS/API.js"></script>
-<script src="JS/UserInfo.js"></script>
-<script src="JS/FormValidator.js"></script>
-<script src="JS/Card.js"></script>
-<script src="JS/CardList.js"></script>
-<script src="JS/Popup.js"></script>
-<script src="JS/AddPlacePopup.js"></script>
-<script src="JS/EditUserPopup.js"></script>
-<script src="JS/ImageViewerPopup.js"></script>
-<script src="JS/script.js"></script>
 
 </body>
 </html>

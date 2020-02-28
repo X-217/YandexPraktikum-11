@@ -1,6 +1,6 @@
 'use strict';
-
-class EditUserPopup extends Popup {
+import Popup from "./Popup.js";
+export default class EditUserPopup extends Popup {
     constructor(userInfo, formValidator, api) {
         super();
         this.userInfo = userInfo;
