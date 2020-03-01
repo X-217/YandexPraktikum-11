@@ -9,10 +9,10 @@ import AddPlacePopup from "./JS/AddPlacePopup.js";
 import EditUserPopup from "./JS/EditUserPopup.js";
 import ImageViewPopup from "./JS/ImageViewerPopup.js";
 
-
 const cardContainer = document.querySelector(".places-list");
+const serverUrl = NODE_ENV === 'development' ? 'http://praktikum.tk/cohort7' : 'https://praktikum.tk/cohort7';
 const userParams = {
-    baseUrl: "https://praktikum.tk/cohort7",
+    baseUrl: serverUrl,
     token: "e68c9d86-cb48-42e5-bf67-da81383a3bce",
 };
 const api = new API(userParams);
